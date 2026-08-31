@@ -1,0 +1,16 @@
+# Dependabot configuration for Queryline
+# Dependabot runs weekly version updates and opens security PRs automatically.
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # Group minor/patch updates into a single PR to keep the history tidy.
+    groups:
+      minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"

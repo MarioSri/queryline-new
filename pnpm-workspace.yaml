@@ -1,0 +1,10 @@
+packages:
+  - .
+
+patchedDependencies:
+  wouter@3.7.1: patches/wouter@3.7.1.patch
+
+overrides:
+  tar: ^7.5.11
+  nanoid: ^3.3.12
+  picomatch: ^4.0.5
